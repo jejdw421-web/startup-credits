@@ -29,21 +29,16 @@ offers:
     program_id: prg_01m1345cbemdxpjtzwtyyk5tj6
     offer_slug: netmind-elevate-inference-credits
     offer_slug_aliases: []
-    title: Up to $100,000 in NetMind inference credits
-    summary: Startups can apply to NetMind Elevate for up to $100,000 in credits to accelerate an eligible venture or project.
+    title: NetMind inference credits for startups
+    summary: Startups can apply to NetMind Elevate for inference credits to accelerate an eligible venture or project.
     lifecycle:
       status: active
       effective_from: 2026-08-28T00:00:00.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to $100,000 in NetMind inference credits.
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 10000000
-            kind: up-to
+          description: NetMind inference credits for an approved startup venture or project.
+          kind: other
       consideration:
         kind: unknown
         description: The public program information does not establish separate consideration.
