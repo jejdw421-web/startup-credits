@@ -39,6 +39,11 @@ offers:
         - benefit_id: ben_01
           description: Up to $100,000 in NetMind inference credits.
           kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
       consideration:
         kind: unknown
         description: The public program information does not establish separate consideration.
