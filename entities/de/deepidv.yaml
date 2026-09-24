@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-28T00:00:00.000Z
   category: auth-security
 profile:
+  summary: deepidv provides identity verification, deepfake and fraud detection, screening, and compliance monitoring APIs, with document checks covering 211+ countries.
   description: deepidv provides identity verification, fraud prevention, and monitoring APIs for digital products.
   links:
     site: https://www.deepidv.com/
@@ -37,8 +38,12 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Full API access free for 6 to 12 months, with no feature gates or usage caps.
-          kind: other
+          description: Full access to deepidv's verification, screening, fraud detection, and monitoring APIs free for 6 to 12 months depending on stage and use case, with no feature gates or usage caps.
+          kind: free-service
+          service: deepidv verification, screening, fraud detection, and monitoring APIs
+          duration:
+            kind: up-to
+            value: P12M
       consideration:
         kind: none
     eligibility:
@@ -46,7 +51,7 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Applicant must be a startup between idea stage and Series A and be approved through deepidv's manual review.
+        statement: The applicant is a startup between idea stage and Series A, including bootstrapped founders, and is approved after deepidv reviews the application and holds a discovery call.
     roles:
       terms_authority_entity_id: ent_01m1358xf97zs2nec9c2bbgrk7
       access_operator_entity_id: ent_01m1358xf97zs2nec9c2bbgrk7
