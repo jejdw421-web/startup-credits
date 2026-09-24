@@ -108,6 +108,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://defencestation.com/early-stage#program-form
+      url: https://defencestation.com/early-stage
     source_ids:
       - src_3c1ec4ddbd3380f7faa80660e47a3ef9663f77750ca5f55446a9b4f4dacef13c
