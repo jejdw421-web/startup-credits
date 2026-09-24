@@ -38,23 +38,12 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          applies_to: Debito Pay processing fees
           description: Zero processing fees for the first 12 months.
-          kind: discount
-          percentage:
-            kind: exact
-            basis_points: 10000
-          duration:
-            kind: exact
-            value: P1Y
-        - benefit_id: ben_02
-          description: Free integration assistance and dedicated technical support.
-          kind: other
-        - benefit_id: ben_03
-          description: Access to Debito Pay's partner network of investors and accelerators.
-          kind: other
+          kind: waiver
+          waived_item: Debito Pay processing fees for the first 12 months
       consideration:
-        kind: none
+        kind: variable
+        description: The startup receives zero processing fees for the first 12 months.
     eligibility:
       rule:
         kind: all
