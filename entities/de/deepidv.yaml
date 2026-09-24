@@ -38,9 +38,9 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Full access to deepidv's verification, screening, fraud detection, and monitoring APIs free for 6 to 12 months depending on stage and use case, with no feature gates or usage caps.
+          description: Full access to deepidv's verification, fraud detection, and monitoring APIs, completely free for 6 to 12 months.
           kind: free-service
-          service: deepidv verification, screening, fraud detection, and monitoring APIs
+          service: deepidv's verification, fraud detection, and monitoring APIs
           duration:
             kind: up-to
             value: P12M
