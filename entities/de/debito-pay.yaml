@@ -10,7 +10,8 @@ entity:
       valid_from: 2026-08-28T00:00:00.000Z
   category: payments-fintech
 profile:
-  description: Debito Pay provides payment processing and integration services for businesses in Africa.
+  summary: Debito Pay is a pan-African fintech platform offering payment infrastructure, POS, ERP, and developer APIs to businesses and individuals in 20+ African countries.
+  description: Debito Pay provides payment processing, payment links, recurring billing, checkout, POS, and developer APIs for businesses across Africa.
   links:
     site: https://debitopay.com/
 sources:
@@ -21,7 +22,7 @@ programs:
     program_slug: startup-program
     program_slug_aliases: []
     title: Debito Pay Startup Program
-    summary: Fee-free payment processing and integration support for eligible early-stage African startups.
+    summary: The Debito Pay Startup Program gives early-stage African startups zero processing fees for their first 12 months, plus free integration help and dedicated support.
     source_ids:
       - src_a940db21e510b3b4a95872a1b957082316a4d4709da8033638f9cd918b5c7af6
 offers:
@@ -30,14 +31,15 @@ offers:
     offer_slug: zero-processing-fees-for-one-year
     offer_slug_aliases: []
     title: Zero Debito Pay processing fees for 12 months
-    summary: Eligible African startups receive zero payment-processing fees for their first 12 months, plus free integration and support.
+    summary: Early-stage African startups get zero processing fees for the first 12 months, free integration assistance, dedicated technical support, and access to Debito Pay's investor and accelerator network.
     lifecycle:
       status: active
       effective_from: 2026-08-28T00:00:00.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: 100% off Debito Pay payment-processing fees for 12 months.
+          applies_to: Debito Pay processing fees
+          description: Zero processing fees for the first 12 months.
           kind: discount
           percentage:
             kind: exact
@@ -46,17 +48,33 @@ offers:
             kind: exact
             value: P1Y
         - benefit_id: ben_02
-          description: Free payment integration and support.
+          description: Free integration assistance and dedicated technical support.
+          kind: other
+        - benefit_id: ben_03
+          description: Access to Debito Pay's partner network of investors and accelerators.
           kind: other
       consideration:
-        kind: unknown
-        description: The offer waives processing fees, but ordinary transaction settlement may still apply.
+        kind: none
     eligibility:
       rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: vendor-discretion
-        statement: Applicant must be an African startup less than three years old and processing fewer than 100 transactions per month.
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant is an early-stage African startup.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than 3 years old.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company processes under 100 transactions per month at application time.
     roles:
       terms_authority_entity_id: ent_01m1358xf9dvc02f3fedyhna2r
       access_operator_entity_id: ent_01m1358xf9dvc02f3fedyhna2r
@@ -64,7 +82,6 @@ offers:
       availability: public
       method: form
       url: https://debitopay.com/startup-program/
-      instructions: Apply through the form on the Debito Pay Startup Program page.
-    terms_url: https://debitopay.com/startup-program/
+      instructions: Apply online; Debito Pay gives a decision within 5 business days.
     source_ids:
       - src_a940db21e510b3b4a95872a1b957082316a4d4709da8033638f9cd918b5c7af6
