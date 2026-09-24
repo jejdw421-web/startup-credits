@@ -20,6 +20,8 @@ sources:
     url: https://www.flystack.dev/startup-program
   - source_id: src_60d9701ead68bf9f8b5811549b81678ecd53d83ca0d0e6eaf3d5050e0eecd126
     url: https://www.flystack.dev/pricing
+  - source_id: src_115d10a17f7c879e14e1dea8594f4a4b355f193f195da6e48a25d92b3eab8b91
+    url: https://www.flystack.dev/
 programs:
   - program_id: prg_01m1358xfarp2sj8qypxkkpn67
     program_slug: startup-program
@@ -43,7 +45,7 @@ offers:
       benefits:
         - applies_to: Flystack Premium and Startup plans
           benefit_id: ben_01
-          description: Up to 50% off the Premium or Startup plan for 12 months, with access to all features.
+          description: Discounted rates on Premium or Startup plans for 12 months, up to 50% off.
           kind: discount
           percentage:
             basis_points: 5000
@@ -88,3 +90,4 @@ offers:
     source_ids:
       - src_359d39692eab39861c18e9fc9da215a52fc68c3af3df4b7b9a3f6dc0f4d68b25
       - src_60d9701ead68bf9f8b5811549b81678ecd53d83ca0d0e6eaf3d5050e0eecd126
+      - src_115d10a17f7c879e14e1dea8594f4a4b355f193f195da6e48a25d92b3eab8b91
